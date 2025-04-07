@@ -1,0 +1,74 @@
+
+Dracula colors --
+ #6d128d
+ #8aff80
+ #9580ff
+ #ff80bf
+ #ffff80
+ #ff9580
+
+#100C08 - Smoky Black
+#6272A4 - Arco
+----------------------------
+
+#292B36
+#6C6AF2 
+#BD93F9 
+#458588
+#B48EAD
+#82AAFF
+#BB9AF7
+#FFFFFF
+#FF0000
+#100C08
+#44475A 
+#F8F8F2
+#FF5555
+#05FFA1
+#04d9ff
+#4d4dff
+#5657f5
+
+----------------------------------------
+
+PYWAL FOR POLYBAR
+
+background = ${xrdb:background:#2f343f}
+foreground = ${xrdb:foreground:#f3f4f5}
+sep = ${xrdb:color3:#d79921}
+
+black       = ${xrdb:color0:#1d2021}
+darkred     = ${xrdb:color1:#cc241d}
+darkgreen   = ${xrdb:color2:#0f8548}
+darkyellow  = ${xrdb:color3:#d79921}
+darkblue    = ${xrdb:color4:#255ea1}
+darkmagenta = ${xrdb:color5:#b16286}
+darkcyan    = ${xrdb:color6:#609996}
+grey        = ${xrdb:color7:#59646b}
+
+lightgray   = ${xrdb:color8:#8f9da6}
+red         = ${xrdb:color9:#e53935}
+green       = ${xrdb:color10:#2cd179}
+yellow      = ${xrdb:color11:#ffc85e}
+blue        = ${xrdb:color12:#5294e2}
+darkpurple  = ${xrdb:color13:#e86ba4}
+cyan        = ${xrdb:color14:#68d4ce}
+white       = ${xrdb:color15:#f3f4f5}
+
+
+CONKY colors
+
+    --Colours
+
+    default_color = '#ff0000',                  -- default color and border color
+    color2 = ' #BD93F9',
+    color1 = ' #05FFA1',
+    color3 = ' #6272A4',
+    color4 = ' #FFFF80',
+    color5 = ' #9580FF',
+    color6 = ' #AA0000',
+
+    -- Signal Colours
+    color9 = ' #1F7411',                        -- green
+    color8 = ' #FFA726',                        -- orange
+    color7 = ' #F1544B',                        -- firebrick
