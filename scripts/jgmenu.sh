@@ -1,0 +1,5 @@
+#!/bin/bash
+
+jgmenu
+
+exit

@@ -1,9 +1,16 @@
-#!/usr/bin/env bash
+#!/bin/bash
+#
+# this script shows the weather forecast for a city using wttr.in curl interface
+#
+# dependencies: curl
 
-TERMINAL="kitty --hold -e"
-FLAGS="-q"
+ROFI_CMD="${ROFI_CMD:-rofi -dmenu -i}"
+FORECAST_DAYS="${FORECAST_DAYS:-2}" # 0 current weather, 1 today, 2 today & tomorrow, empty 3days
+WEATHER_PLACEHOLDER="Type the name of a place and press \"Enter\" to show its weather forecast"
 
-# Directly fetch weather for Markham, Ontario
-choice="wttr.in/Thornhill,Canada"
+weather=$(curl -s wttr.in/"$city"?ATFn$FORECAST_DAYS)
 
-$TERMINAL curl $FLAGS $choice
+while city=$($ROFI_CMD -mesg "$weather" -p "Place" -theme-str "entry{placeholder:\"$WEATHER_PLACEHOLDER\";} listview{enabled:false;}"); do
+        city=$(echo $city | tr " " "+")
+        weather=$(curl -s wttr.in/"$city"?ATFn$FORECAST_DAYS)
+done
